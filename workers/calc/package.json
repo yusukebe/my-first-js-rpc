@@ -2,8 +2,9 @@
   "name": "calc",
   "type": "module",
   "scripts": {
+    "build": "tsc",
     "dev": "wrangler dev",
-    "build": "tsc"
+    "deploy": "wrangler deploy --minify"
   },
   "types": "dist/index.d.ts"
 }

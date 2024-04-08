@@ -4,7 +4,9 @@
     "dev": "concurrently \"yarn run calc:dev\" \"yarn run server:dev\"",
     "calc:build": "yarn workspace calc build",
     "calc:dev": "yarn workspace calc dev",
-    "server:dev": "yarn workspace server dev"
+    "calc:deploy": "yarn workspace calc deploy",
+    "server:dev": "yarn workspace server dev",
+    "server:deploy": "yarn workspace server deploy"
   },
   "workspaces": {
     "packages": [

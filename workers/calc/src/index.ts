@@ -4,4 +4,7 @@ export default class Calc extends WorkerEntrypoint {
   add(a: number, b: number) {
     return a + b
   }
+  fetch() {
+    return new Response()
+  }
 }
