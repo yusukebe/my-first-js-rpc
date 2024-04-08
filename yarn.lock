@@ -364,12 +364,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"add@workspace:^, add@workspace:workers/add":
-  version: 0.0.0-use.local
-  resolution: "add@workspace:workers/add"
-  languageName: unknown
-  linkType: soft
-
 "agent-base@npm:^7.0.2, agent-base@npm:^7.1.0, agent-base@npm:^7.1.1":
   version: 7.1.1
   resolution: "agent-base@npm:7.1.1"
@@ -496,6 +490,12 @@ __metadata:
   checksum: 10c0/7992665305cc251a984f4fdbab1449d50e88c635bc43bf2785530c61d239c61b349e5734461baa461caaee65f040ab14e2d58e694f479c0810cffd181ba5eabc
   languageName: node
   linkType: hard
+
+"calc@workspace:^, calc@workspace:workers/calc":
+  version: 0.0.0-use.local
+  resolution: "calc@workspace:workers/calc"
+  languageName: unknown
+  linkType: soft
 
 "capnp-ts@npm:^0.7.0":
   version: 0.7.0
@@ -1082,16 +1082,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-rpc@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "js-rpc@workspace:."
-  dependencies:
-    "@cloudflare/workers-types": "npm:^4.20240405.0"
-    concurrently: "npm:^8.2.2"
-    wrangler: "npm:^3.48.0"
-  languageName: unknown
-  linkType: soft
-
 "jsbn@npm:1.1.0":
   version: 1.1.0
   resolution: "jsbn@npm:1.1.0"
@@ -1298,6 +1288,16 @@ __metadata:
   checksum: 10c0/1f8197e8a19e63645a786581d58c41df7853da26702dbc005193e2437c98ca49b255345c173d50c08fe4b4dbb363e53cb655ecc570791f8deb09887248dd34a2
   languageName: node
   linkType: hard
+
+"my-first-js-rpc@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "my-first-js-rpc@workspace:."
+  dependencies:
+    "@cloudflare/workers-types": "npm:^4.20240405.0"
+    concurrently: "npm:^8.2.2"
+    wrangler: "npm:^3.48.0"
+  languageName: unknown
+  linkType: soft
 
 "nanoid@npm:^3.3.3":
   version: 3.3.7
@@ -1564,7 +1564,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "server@workspace:workers/server"
   dependencies:
-    add: "workspace:^"
+    calc: "workspace:^"
     hono: "npm:^4.2.2"
   languageName: unknown
   linkType: soft

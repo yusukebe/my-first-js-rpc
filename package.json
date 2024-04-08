@@ -1,8 +1,9 @@
 {
   "name": "my-first-js-rpc",
   "scripts": {
-    "dev": "concurrently \"yarn run add:dev\" \"yarn run server:dev\"",
-    "add:dev": "yarn workspace add dev",
+    "dev": "concurrently \"yarn run calc:dev\" \"yarn run server:dev\"",
+    "calc:build": "yarn workspace calc build",
+    "calc:dev": "yarn workspace calc dev",
     "server:dev": "yarn workspace server dev"
   },
   "workspaces": {
