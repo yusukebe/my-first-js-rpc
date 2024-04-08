@@ -1,6 +1,6 @@
 # My first JS RPC for Cloudflare Workers
 
-This is my first project using the PRC feature for Cloudflare Workers.
+This is my first project using [the PRC feature](https://developers.cloudflare.com/workers/runtime-apis/rpc/) for Cloudflare Workers.
 
 ## Features
 
