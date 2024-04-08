@@ -1,0 +1,9 @@
+{
+  "name": "add",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "tsc"
+  },
+  "types": "dist/index.d.ts"
+}

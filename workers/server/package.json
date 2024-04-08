@@ -1,0 +1,12 @@
+{
+  "name": "server",
+  "scripts": {
+    "dev": "wrangler dev ./src/index.ts"
+  },
+  "devDependencies": {
+    "add": "workspace:^"
+  },
+  "dependencies": {
+    "hono": "^4.2.2"
+  }
+}

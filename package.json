@@ -1,0 +1,19 @@
+{
+  "name": "my-first-js-rpc",
+  "scripts": {
+    "dev": "concurrently \"yarn run add:dev\" \"yarn run server:dev\"",
+    "add:dev": "yarn workspace add dev",
+    "server:dev": "yarn workspace server dev"
+  },
+  "workspaces": {
+    "packages": [
+      "workers/*"
+    ]
+  },
+  "packageManager": "yarn@4.1.1",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240405.0",
+    "concurrently": "^8.2.2",
+    "wrangler": "^3.48.0"
+  }
+}
